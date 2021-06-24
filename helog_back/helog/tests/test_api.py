@@ -18,4 +18,4 @@ class PostingTest(TestCase):
             'created_datetime': timezone.now()
         })
 
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, 201)

@@ -3,6 +3,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=pycharm,python,django
 
 poetry.lock
+config/settings.py
 
 ### Django ###
 *.log

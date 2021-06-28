@@ -1,3 +1,5 @@
 from django.contrib import admin
+from helog.models import PostsModel
 
-# Register your models here.
+
+admin.site.register(PostsModel)

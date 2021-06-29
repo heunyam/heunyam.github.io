@@ -1,11 +1,10 @@
-import { Switch, Route, BrowserRouter } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" component={} />
-      </Switch>
-    </BrowserRouter>
+    <Switch>
+      <Route path="/post/create" />
+      <Route path="/" />
+    </Switch>
   );
 }

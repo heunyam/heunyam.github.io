@@ -1,8 +1,9 @@
 from rest_framework import (
     views,
     serializers,
-    status
+    status,
 )
+from rest_framework.response import Response
 from helog.models import PostsModel
 
 
@@ -13,16 +14,17 @@ class PostsAPI(views.APIView):
             model = PostsModel
             fields = (
                 'title',
-                'content',
+                'subTitle',
+                'link',
                 'created_datetime'
             )
-
-    def get(self, request):
-        serializer = self.PostsSerializer(data=request.data)
-
-
+            read_only_fields = ('created_datetime',)
 
     def post(self, request):
-        return Response({
-            'ok': True
-        })
+        serializer = self.PostsSerializer(data=request.data)
+        if not serializer.is_valid():
+            return Response(serializer.errors, status.HTTP_400_BAD_REQUEST)
+
+        serializer.save()
+
+        return Response(serializer.data, status.HTTP_201_CREATED)

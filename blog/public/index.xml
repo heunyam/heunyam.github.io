@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Heunyam</title>
+    <link>https://heunyam.github.io/</link>
+    <description>Recent content on Heunyam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>tpwns072@gmail.com (Sejun Kim)</managingEditor>
+    <webMaster>tpwns072@gmail.com (Sejun Kim)</webMaster>
+    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://heunyam.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Collections No.1</title>
+      <link>https://heunyam.github.io/notes/note1/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <author>tpwns072@gmail.com (Sejun Kim)</author>
+      <guid>https://heunyam.github.io/notes/note1/</guid>
+      <description>Articles about learn in public, brag document and free stuffs.
+Learn In Public If there’s a golden rule, it’s this one, so I put it first. All the other rules are more or less elaborations of this rule #1.
+A habit of creating learning exhaust:
+Write blogs and tutorials and cheatsheets. Speak at meetups and conferences. Ask and answer things on Stackoverflow or Reddit. Avoid the walled gardens like Slack and Discord, they’re not public.</description>
+    </item>
+    
+  </channel>
+</rss>

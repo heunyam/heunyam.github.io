@@ -1,15 +1,11 @@
 ---
 type : "tags"
 layout : "about"
-title: "About me"
+title: About me"
 ---
 
-I am Bino Kochumol Varghese.
+김세준, 03년생
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+페이히어에서 백엔드 개발자로 2021년 7월부터 지금까지 일하고 있음.
 
 <br/>

@@ -8,13 +8,13 @@ enableGitInfo = true
 
 [Params]
   commit = "https://github.com/heunyam/heunyam.github.io/tree/"
-  author = "heunyam"
-  description = ""
+  author = "Heunyam"
+  description = "In solitude, where we are least alone."
   github = "heunyam"
 
 
 [Author]
-  name = "김세준"
+  name = "Sejun Kim"
   email = "tpwns072@gmail.com"
   github = "heunyam"
   #gitlab = "username"
@@ -40,9 +40,9 @@ enableGitInfo = true
 [[menu.main]]
     name = "Notes"
     url = "/notes/"
-    weight = 2
+    weight = 1
 
 [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 1
+    weight = 100

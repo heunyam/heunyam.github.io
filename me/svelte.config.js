@@ -1,12 +1,22 @@
 import adapter from '@sveltejs/adapter-auto';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import adapterStatic from '@sveltejs/adapter-static';
 
-/** @type {import('@sveltejs/kit').Config} */
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+const repoName = "heunyam.github.io"
+
 const config = {
-	// Consult https://svelte.dev/docs/kit/integrations
-	// for more information about preprocessors
-	preprocess: vitePreprocess(),
-	kit: { adapter: adapter() }
+  kit: {
+    adapter: isGitHubPages 
+      ? adapterStatic({
+          pages: 'build',
+          assets: 'build',
+          fallback: null
+        })
+      : adapter(), // 로컬 개발용
+    paths: {
+      base: isGitHubPages ? repoName : ''
+    }
+  }
 };
 
 export default config;

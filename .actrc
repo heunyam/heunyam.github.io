@@ -1,0 +1,5 @@
+# .actrc
+--container-architecture linux/amd64
+-P ubuntu-latest=catthehacker/ubuntu:act-latest
+--env NODE_ENV=production
+--env GITHUB_PAGES=true

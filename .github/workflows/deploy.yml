@@ -29,12 +29,13 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+        working-directory: ./me
 
       - name: Build
         run: npm run build
+        working-directory: ./me
         env:
           NODE_ENV: production
-        working-directory: ./me
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -5,14 +5,9 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+defaults:
+  run:
+    working-directory: ./me
 
 jobs:
   build:
@@ -29,18 +24,16 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-        working-directory: ./me
 
       - name: Build
         run: npm run build
-        working-directory: ./me
         env:
           NODE_ENV: production
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'build/'
+          path: './me/build/'
 
   # 배포 작업
   deploy:

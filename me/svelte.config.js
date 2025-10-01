@@ -19,8 +19,8 @@ const config = {
     },
 
     prerender: {
-      entries: ['/']
-    }
+			entries: ['/book'],
+		}
   }
 };
 

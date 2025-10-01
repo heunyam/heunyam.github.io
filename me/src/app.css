@@ -1,13 +1,26 @@
 @import 'tailwindcss';
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer base {
+	/* 폰트만 전역 적용 */
+	* {
+		box-sizing: border-box;
+		font-family: 'Pretendard';
+	}
 
-  font-family: 'Pretendard';
-}
+	/* 필요한 요소만 리셋 */
+	body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, blockquote, dl, dd {
+		margin: 0;
+		padding: 0;
+	}
 
-body {
-  overflow: hidden;
+	/* 리스트 스타일 제거 */
+	ul, ol {
+		list-style: none;
+	}
+
+	/* 링크 스타일 */
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
 }

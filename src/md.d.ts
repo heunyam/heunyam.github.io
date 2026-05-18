@@ -4,4 +4,3 @@ declare module '*.md' {
 	const component: Component;
 	export default component;
 }
-

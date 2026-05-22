@@ -17,10 +17,7 @@ const config = {
 			strict: true
 		})
 	},
-	preprocess: [
-		vitePreprocess(),
-		mdsvex({ extensions: ['.svx', '.md'] })
-	],
+	preprocess: [vitePreprocess(), mdsvex({ extensions: ['.svx', '.md'] })],
 	extensions: ['.svelte', '.svx', '.md']
 };
 

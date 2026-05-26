@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@theme {
+    --font-sans: "Pretendard", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* This is for daily posts*/
+/* @font-face {
+    font-family: 'Ridibatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+} */
+
+body {
+  font-family: var(--font-sans);
+  @apply bg-[#FAF7F0]; 
+}

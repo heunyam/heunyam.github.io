@@ -2,7 +2,7 @@
 @plugin '@tailwindcss/typography';
 
 @theme {
-    --font-sans: "Pretendard", ui-sans-serif, system-ui, sans-serif;
+	--font-sans: 'Pretendard', ui-sans-serif, system-ui, sans-serif;
 }
 
 /* This is for daily posts*/
@@ -14,6 +14,6 @@
 } */
 
 body {
-  font-family: var(--font-sans);
-  @apply bg-[#FAF7F0]; 
+	font-family: var(--font-sans);
+	@apply bg-[#FAF7F0];
 }

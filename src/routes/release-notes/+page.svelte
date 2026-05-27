@@ -8,13 +8,13 @@
 
 	<div class="flex flex-col text-sm">
 		<div class="flex">
-			<time class="pr-5 pt-1">May 28, 2026</time>
+			<time class="pt-1 pr-5">May 28, 2026</time>
 			<article class="prose">
 				<Note_0528 />
 			</article>
 		</div>
 		<div class="flex py-5">
-			<time class="pr-5 pt-1">May 22, 2026</time>
+			<time class="pt-1 pr-5">May 22, 2026</time>
 			<article class="prose">
 				<Note_0522 />
 			</article>

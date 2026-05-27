@@ -1,10 +1,14 @@
 <script lang="ts">
-	import SampleMarkdown from '$lib/posts/샘플.md';
+	import { resolve } from '$app/paths';
+
+	const blogURL = resolve('/blog');
 </script>
 
-<main class="p-6">
-	<h1 class="mb-4 text-2xl font-bold">블로그 포스트 페이지</h1>
-	<article class="prose">
-		<SampleMarkdown />
-	</article>
+<main class="p-10">
+	<h1 class="text-3xl font-light">justko.dev</h1>
+	<ul class="pt-2 text-base font-extralight">
+		<li class="">
+			<a href={blogURL} class="hover:border-b hover:border-solid">/blog</a>
+		</li>
+	</ul>
 </main>

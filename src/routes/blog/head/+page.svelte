@@ -2,7 +2,7 @@
 	import { resolve } from '$app/paths';
 	import SampleMarkdown from '$lib/posts/20260601_글.md';
 
-	const baseURL = resolve('/');
+	const blogMainURL = resolve('/blog');
 
 	let postTitle = $state('글쓰기를 마주하면서'); // It should be replaced from the title inside the Markdown.
 	let postTags = ['작은글', '긴글', '적당한글'];
@@ -14,7 +14,7 @@
 	<div class="flex w-200 flex-col pt-20">
 		<div id="post-header" class="mb-2 flex">
 			<div class="flex w-25 shrink-0 items-center justify-center">
-				<a href={baseURL} class="text-xs font-light text-ink-muted">돌아가기</a>
+				<a href={blogMainURL} class="text-xs font-light text-ink-muted">돌아가기</a>
 			</div>
 			<div class="flex items-end pl-4">
 				<h1 class="text-base">{postTitle}</h1>

@@ -35,7 +35,7 @@
 						<li class="">#{tag}</li>
 					{/each}
 				</ul>
-				<div class="prose max-w-none py-6 px-5 text-[75%] font-[Ridibatang]">
+				<div class="prose max-w-none px-5 py-6 font-[Ridibatang] text-[75%]">
 					<PostContent />
 				</div>
 			</div>

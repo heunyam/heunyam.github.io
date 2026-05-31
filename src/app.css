@@ -3,6 +3,14 @@
 
 @theme {
 	--font-sans: 'Pretendard', ui-sans-serif, system-ui, sans-serif;
+
+	--color-surface-base: #faf7f0;
+
+	--color-ink-primary: #221f1c;
+	--color-ink-muted: #8c8780;
+
+	--color-line-bold: #221f1c;
+	--color-line-light: #e0dbd4;
 }
 
 /* This is for daily posts*/
@@ -13,7 +21,7 @@
     font-display: swap;
 } */
 
-body {
+html {
 	font-family: var(--font-sans);
-	@apply bg-[#FAF7F0];
+	background-color: var(--color-surface-base);
 }

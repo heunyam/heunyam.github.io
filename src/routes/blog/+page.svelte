@@ -1,45 +1,46 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
-	import SampleMarkdown from '$lib/posts/20260526_블로그_대문.md';
-
-	const baseURL = resolve('/');
-
-	let postTitle = $state('무제'); // It should be replaced from the title inside the Markdown.
-	let postTags = ['작은글'];
-	let postTime = '2026.05.26';
-	let PostContent = $state(SampleMarkdown);
 </script>
 
 <div class="flex justify-center-safe">
-	<div class="flex w-200 flex-col">
-		<div id="post-header" class="mt-10 flex h-15">
-			<div class="flex w-25 items-center justify-center">
-				<a href={baseURL} class="text-sm font-light text-[#8C8780]">돌아가기</a>
-			</div>
-			<div class="flex items-center pl-4">
-				<h1 class="text-2xl">{postTitle}</h1>
+	<div class="flex flex-col">
+		<div id="post-header-box" class="flex w-200 flex-col pt-20">
+			<div class="flex pb-2 pl-4">
+				<div class="w-25"></div>
+				<p class="text-xs tracking-widest text-ink-muted">LATEST</p>
 			</div>
 		</div>
-
-		<div id="post-body" class="flex border-y-[0.5px] border-[#221F1C]">
-			<div class="w-25 border-r-[0.5px] border-r-[#CCC7BD]">
-				<div
-					class="flex h-9 w-full items-center justify-center border-b-[0.5px] border-b-[#CCC7BD]"
-				>
-					<time class="text-sm text-[#8C8780]">{postTime}</time>
-				</div>
-			</div>
-			<div class="pb-10">
-				<ul
-					class="flex h-9 w-175 items-center border-b-[0.5px] border-b-[#CCC7BD] pl-5 text-sm text-[#8C8780]"
-				>
-					{#each postTags as tag (tag)}
-						<li>#{tag}</li>
-					{/each}
+		<div id="post-content-box" class="flex border-y-[0.5px] border-line-bold">
+			<aside class="w-25">
+				<ul class="border-r-[0.5px] border-line-light text-xs font-normal text-ink-muted">
+					<li class="text-primary border-y-[0.5px] border-line-light py-1.5 pl-4">
+						<time>2025.03.22</time>
+					</li>
+					<li class="text-primary border-y-[0.5px] border-line-light py-1.5 pl-4">
+						<time>2025.03.22</time>
+					</li>
+					<li class="text-primary border-y-[0.5px] border-line-light py-1.5 pl-4">
+						<time>2025.03.22</time>
+					</li>
+					<li class="text-primary border-y-[0.5px] border-line-light py-1.5 pl-4">
+						<time>2025.03.22</time>
+					</li>
 				</ul>
-				<div class="prose w-full max-w-none pt-2 pl-5">
-					<PostContent />
-				</div>
+			</aside>
+			<div class="grow">
+				<ul class="text-xs font-normal text-ink-primary">
+					<li class="text-primary border-y-[0.5px] border-line-light py-1.5 pl-4">
+						SvelteKit으로 블로그 만들기 — 프로젝트 셋업
+					</li>
+					<li class="text-primary border-y-[0.5px] border-line-light py-1.5 pl-4">
+						자 이제 너는 두번째 글이야.
+					</li>
+					<li class="text-primary border-y-[0.5px] border-line-light py-1.5 pl-4">
+						자 이제 너는 세번째 글이야.
+					</li>
+					<li class="text-primary border-y-[0.5px] border-line-light py-1.5 pl-4">
+						자 이제 너는 네번째 글이야.
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>

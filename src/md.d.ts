@@ -1,6 +1,6 @@
 type MarkdownMetadata = {
 	title?: string;
-	date?: string;
+	date: string;
 	tags?: string[];
 };
 

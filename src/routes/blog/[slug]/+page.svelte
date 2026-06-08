@@ -14,8 +14,6 @@
 		})
 	);
 
-	console.log(post?.id, post?.metadata);
-
 	let postTitle = $derived(post?.metadata.title);
 	let postTags = $derived(post?.metadata.tags);
 	let postTime = $derived(post?.metadata.date);

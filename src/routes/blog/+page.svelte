@@ -1,6 +1,10 @@
 <script lang="ts">
 	import { allPosts } from '$lib/utils/markdownLoader';
 	import { resolve } from '$app/paths';
+
+	const sortedPosts = allPosts.toSorted((a, b) => {
+		return b.metadata.date.localeCompare(a.metadata.date);
+	});
 </script>
 
 <div class="flex justify-center-safe md:mr-25">
@@ -15,7 +19,7 @@
 		<div id="post-content-box" class="flex border-y-[0.5px] border-line-bold">
 			<aside class="w-25 shrink-0">
 				<ul class="border-r-[0.5px] border-line-light text-xs font-normal text-ink-muted">
-					{#each allPosts as post (post.id)}
+					{#each sortedPosts as post (post.id)}
 						<li class="text-primary border-y-[0.5px] border-line-light py-1.5 pl-4">
 							<time>{post.metadata.date}</time>
 						</li>
@@ -27,9 +31,7 @@
 				<ul class="text-xs font-normal text-ink-primary">
 					{#each allPosts as post (post.id)}
 						<li class="text-primary border-y-[0.5px] border-line-light py-1.5 pl-4">
-							<a href={resolve('/blog/[slug]', { slug: post.id ? post.id : 'head' })}
-								>{post.metadata.title}</a
-							>
+							<a href={resolve('/blog/[slug]', { slug: post.id })}>{post.metadata.title}</a>
 						</li>
 					{/each}
 				</ul>

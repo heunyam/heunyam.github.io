@@ -6,7 +6,7 @@ export type MarkdownModule = {
 };
 
 export type MarkdownDTO = {
-	id?: string;
+	id: string;
 	path: string;
 	metadata: MarkdownMetadata;
 	component: Component;
@@ -16,8 +16,13 @@ function loadMarkdownFiles(modules: Record<string, MarkdownModule>): MarkdownDTO
 	const markdownModules: MarkdownDTO[] = [];
 
 	for (const [path, module] of Object.entries(modules)) {
-		const id = path.split('/').at(-1)?.replace('.md', '');
+		const filename = path.split('/').at(-1);
 
+		if (!filename) {
+			throw new Error(`Failed to extract markdown filename from path: ${path}`);
+		}
+
+		const id = filename.replace('.md', '');
 		markdownModules.push(<MarkdownDTO>{
 			id: id,
 			path: path,

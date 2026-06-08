@@ -29,7 +29,7 @@
 			</aside>
 			<div class="grow">
 				<ul class="text-xs font-normal text-ink-primary">
-					{#each allPosts as post (post.id)}
+					{#each sortedPosts as post (post.id)}
 						<li class="text-primary border-y-[0.5px] border-line-light py-1.5 pl-4">
 							<a href={resolve('/blog/[slug]', { slug: post.id })}>{post.metadata.title}</a>
 						</li>

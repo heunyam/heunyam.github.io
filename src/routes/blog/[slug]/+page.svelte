@@ -38,12 +38,9 @@
 				</div>
 			</aside>
 			<div class="max-w-175 grow">
-				
-				<div class="flex iterms-center border-b-[0.5px] border-b-line-light py-1.5 pl-4 gap-1.5">
+				<div class="iterms-center flex gap-1.5 border-b-[0.5px] border-b-line-light py-1.5 pl-4">
 					<h1 class="text-xs text-ink-primary">{postTitle}</h1>
-					<ul
-						class="flex items-center gap-1.5 text-xs font-light"
-					>
+					<ul class="flex items-center gap-1.5 text-xs font-light">
 						{#each postTags as tag (tag)}
 							<li class="">#{tag}</li>
 						{/each}

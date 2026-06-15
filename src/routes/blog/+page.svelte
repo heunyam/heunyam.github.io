@@ -30,7 +30,7 @@
 						<li class="text-primary border-y-[0.5px] border-line-light py-1.5 pl-4">
 							<span class="opacity-0">Blank Text</span>
 						</li>
-					 {/each}
+					{/each}
 				</ul>
 			</aside>
 			<div class="grow">
@@ -50,4 +50,3 @@
 		</div>
 	</div>
 </div>
-

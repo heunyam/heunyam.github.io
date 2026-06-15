@@ -5,14 +5,16 @@
 	const sortedPosts = allPosts.toSorted((a, b) => {
 		return b.metadata.date.localeCompare(a.metadata.date);
 	});
+	const currentCount = allPosts.length;
+	const blankCount = 20 - currentCount;
 </script>
 
-<div class="flex justify-center-safe md:mr-25">
+<div class="flex justify-center-safe">
 	<div class="flex w-200 flex-col pt-22">
 		<div id="post-header-box" class="flex flex-col">
 			<div class="flex pb-2 pl-4">
 				<div class="w-25"></div>
-				<p class="text-xs tracking-widest text-ink-muted">LATEST</p>
+				<p class="text-xs text-ink-muted">LATEST</p>
 			</div>
 		</div>
 
@@ -24,7 +26,11 @@
 							<time>{post.metadata.date}</time>
 						</li>
 					{/each}
-					<!-- 실제 글 없어도 빈 줄칸으로 꽉채우기 -->
+					{#each Array(blankCount)}
+						<li class="text-primary border-y-[0.5px] border-line-light py-1.5 pl-4">
+							<span class="opacity-0">Blank Text</span>
+						</li>
+					 {/each}
 				</ul>
 			</aside>
 			<div class="grow">
@@ -34,8 +40,14 @@
 							<a href={resolve('/blog/[slug]', { slug: post.id })}>{post.metadata.title}</a>
 						</li>
 					{/each}
+					{#each Array(blankCount)}
+						<li class="text-primary border-y-[0.5px] border-line-light py-1.5 pl-4">
+							<span class="opacity-0">Blank Text</span>
+						</li>
+					{/each}
 				</ul>
 			</div>
 		</div>
 	</div>
 </div>
+

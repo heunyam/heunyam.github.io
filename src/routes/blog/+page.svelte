@@ -10,7 +10,7 @@
 </script>
 
 <div class="flex justify-center-safe">
-	<div class="flex w-200 flex-col pt-22">
+	<div class="flex w-160 flex-col pt-22">
 		<div id="post-header-box" class="flex flex-col">
 			<div class="flex pb-2 pl-4">
 				<div class="w-25"></div>

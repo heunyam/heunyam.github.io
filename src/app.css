@@ -23,5 +23,6 @@
 
 html {
 	font-family: var(--font-sans);
+	font-size: 125%;
 	background-color: var(--color-surface-base);
 }

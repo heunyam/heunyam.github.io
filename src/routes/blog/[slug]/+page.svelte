@@ -23,7 +23,7 @@
 </script>
 
 <div class="flex justify-center-safe">
-	<div class="flex w-200 flex-col pt-22">
+	<div class="flex w-160 flex-col pt-22">
 		<div class="flex pb-2 pl-4">
 			{#if innerWidth.current && innerWidth.current > MOBILE_WIDTH}
 				<div class="w-25"></div>
@@ -43,7 +43,7 @@
 					</div>
 				</aside>
 			{/if}
-			<div class="max-w-175 grow">
+			<div class="grow">
 				<div class="iterms-center flex gap-1.5 border-b-[0.5px] border-b-line-light py-1.5 pl-4">
 					<h1 class="text-xs text-ink-primary">{postTitle}</h1>
 					<ul class="flex items-center gap-1.5 text-xs font-light">
@@ -52,7 +52,9 @@
 						{/each}
 					</ul>
 				</div>
-				<div class="prose max-w-none px-5 py-6 font-[Ridibatang] text-[75%]">
+				<div
+					class="prose max-w-none border-l-[0.5px] border-line-light px-5 py-6 font-[Ridibatang] text-[75%]"
+				>
 					<PostContent />
 				</div>
 			</div>

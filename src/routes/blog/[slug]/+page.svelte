@@ -52,7 +52,9 @@
 						{/each}
 					</ul>
 				</div>
-				<div class="prose max-w-none px-5 py-6 font-[Ridibatang] text-[75%] border-l-[0.5px] border-line-light">
+				<div
+					class="prose max-w-none border-l-[0.5px] border-line-light px-5 py-6 font-[Ridibatang] text-[75%]"
+				>
 					<PostContent />
 				</div>
 			</div>

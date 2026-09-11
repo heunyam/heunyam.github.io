@@ -11,7 +11,7 @@
 	<div class="flex flex-col gap-4 text-sm">
 		{#each sortedNotes as note (note.id)}
 			{@const Note = note.component}
-			<div class="flex max-w-170 gap-4 border-b-[0.5px]">
+			<div class="flex max-w-170 gap-4 border-b-[0.5px] border-line-light">
 				<time class="text-xs">{note.metadata.date}</time>
 				<article class="prose max-w-none text-[90%]">
 					<Note />

@@ -52,5 +52,15 @@ function loadAllNotes(): MarkdownDTO[] {
 	return loadMarkdownFiles(modules);
 }
 
+function loadAllBookReviews(): MarkdownDTO[] {
+	const modules = import.meta.glob<{ default: Component; metadata: MarkdownMetadata }>(
+		'$lib/book-reviews/*.md',
+		{ eager: true }
+	);
+
+	return loadMarkdownFiles(modules);
+}
+
 export const allPosts = loadAllPosts();
 export const allNotes = loadAllNotes();
+export const allBookReviews = loadAllBookReviews();
